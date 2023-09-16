@@ -2,3 +2,24 @@
 h1,h2{
     color: blueviolet;
 }
+
+div>p{
+    color: firebrick;
+}
+ul>p{
+    color: yellow;
+}
+p{
+    color: green;
+}
+.box li{
+    color: blue;
+}
+
+ul li.done{
+    color: green
+}
+
+div ul li.done{
+    font-size: xx-large;
+}
