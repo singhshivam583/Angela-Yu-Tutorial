@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/4.3 HTML Porfolio Project/solution.html"
+    "livePreview.defaultPreviewPath": "/4.3 HTML Porfolio Project/solution.html",
+    "editor.acceptSuggestionOnEnter": "on"
 }
