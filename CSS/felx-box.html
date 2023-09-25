@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+        .container{
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* flex properties for flex contianer*/
+            flex-direction: row;
+            /*flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-flow:column wrap;*/
+
+            flex-wrap: wrap;
+
+            /*
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            align-items: center;
+            align-items: flex-end;
+            align-items: stretch;
+            */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border:2px solid black ;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /*
+            order: 4;
+            */
+        }
+        #item-2{
+            /*
+            flex-grow: 2;
+            flex-shrink: 5;
+            */
+            flex-basis: 250px ;
+            /* when flex direction is set to row flexb basis will control width*/
+            /* when the flex direction is set to column flex basis will control height*/
+        }
+        #item-3{
+            align-self:center;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>this is a felxbox</h1>
+    <div class="container">
+      <div class="item" id="item-1">First Box</div>
+      <div class="item" id="item-2">Second Box</div>
+      <div class="item" id="item-3">Third Box</div>
+      <!-- <div class="item" id="item-4">Fourth Box</div>
+      <div class="item" id="item-5">Fifth Box</div>
+      <div class="item" id="item-6">Sixth-Box</div> -->
+    </div>
+  </body>
+</html>

@@ -1,4 +1,5 @@
 {
     "livePreview.defaultPreviewPath": "/4.3 HTML Porfolio Project/solution.html",
-    "editor.acceptSuggestionOnEnter": "on"
+    "editor.acceptSuggestionOnEnter": "on",
+    "liveServer.settings.port": 5501
 }
