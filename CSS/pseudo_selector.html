@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+            color: white;
+           
+        }
+        header::before{
+            background: url('https://source.unsplash.com/featured/1600x900')no-repeat center center/cover ;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navbar{
+            margin-top: 0px;
+            width: 100%;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+            
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            margin: 3px;
+            padding: 10px;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            justify-content: center;
+        }
+        section::before{
+            content: 'this is the content'
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item1" id="item">Home</li>
+                <li class="item2" id="item">About</li>
+                <li class="item3" id="item">Services</li>
+                <li class="item4" id="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to Coding World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, voluptatibus laborum. Sit repudiandae repellat ullam eos fugiat provident qui harum, vero veniam quo nisi. Et, molestiae sapiente expedita tenetur praesentium cumque voluptates possimus eos?</p>
+    </section>
+</body>
+</html>
